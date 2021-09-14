@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95BA3A6526F043FF00AB7F1B /* StatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BA3A6426F043FF00AB7F1B /* StatsManager.swift */; };
 		AB2E56642512F0C700965C7A /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB2E56632512F0C700965C7A /* Notes.txt */; };
 		ABA612B824C91CF80042154F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA612B724C91CF80042154F /* AppDelegate.swift */; };
 		ABA612BA24C91CF80042154F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA612B924C91CF80042154F /* SceneDelegate.swift */; };
@@ -17,7 +18,6 @@
 		ABA612CF24C91CFB0042154F /* _nd_day_funTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA612CE24C91CFB0042154F /* _nd_day_funTests.swift */; };
 		ABA612DA24C91CFB0042154F /* _nd_day_funUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA612D924C91CFB0042154F /* _nd_day_funUITests.swift */; };
 		ABA612E824E4CFEC0042154F /* Myscene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA612E724E4CFEC0042154F /* Myscene.swift */; };
-		ABA612EA24E4D2E70042154F /* new court.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA612E924E4D2E70042154F /* new court.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95BA3A6426F043FF00AB7F1B /* StatsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsManager.swift; sourceTree = "<group>"; };
 		AB2E56632512F0C700965C7A /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		ABA612B424C91CF80042154F /* 2nd day fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2nd day fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA612B724C91CF80042154F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		ABA612D924C91CFB0042154F /* _nd_day_funUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _nd_day_funUITests.swift; sourceTree = "<group>"; };
 		ABA612DB24C91CFB0042154F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA612E724E4CFEC0042154F /* Myscene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myscene.swift; sourceTree = "<group>"; };
-		ABA612E924E4D2E70042154F /* new court.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "new court.png"; path = "../../../../Desktop/fwdtennisapp/new court.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 				ABA612B924C91CF80042154F /* SceneDelegate.swift */,
 				ABA612BB24C91CF80042154F /* ViewController.swift */,
 				ABA612E724E4CFEC0042154F /* Myscene.swift */,
+				95BA3A6426F043FF00AB7F1B /* StatsManager.swift */,
 				ABA612BD24C91CF80042154F /* Main.storyboard */,
-				ABA612E924E4D2E70042154F /* new court.png */,
 				ABA612C224C91CFB0042154F /* LaunchScreen.storyboard */,
 				ABA612C024C91CFB0042154F /* Assets.xcassets */,
 				ABA612C524C91CFB0042154F /* Info.plist */,
@@ -244,7 +244,6 @@
 				ABA612C424C91CFB0042154F /* LaunchScreen.storyboard in Resources */,
 				ABA612C124C91CFB0042154F /* Assets.xcassets in Resources */,
 				ABA612BF24C91CF80042154F /* Main.storyboard in Resources */,
-				ABA612EA24E4D2E70042154F /* new court.png in Resources */,
 				AB2E56642512F0C700965C7A /* Notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +272,7 @@
 				ABA612E824E4CFEC0042154F /* Myscene.swift in Sources */,
 				ABA612BC24C91CF80042154F /* ViewController.swift in Sources */,
 				ABA612B824C91CF80042154F /* AppDelegate.swift in Sources */,
+				95BA3A6526F043FF00AB7F1B /* StatsManager.swift in Sources */,
 				ABA612BA24C91CF80042154F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
