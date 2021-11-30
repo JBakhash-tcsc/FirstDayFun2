@@ -53,6 +53,10 @@ class ViewController: UIViewController, SKSceneDelegate {
     
     @IBOutlet weak var computergpoutlet: UILabel!
     
+  
+    @IBOutlet weak var Csets: UILabel!
+    
+    @IBOutlet weak var Psets: UILabel!
     
     @IBOutlet weak var servesLabel: UILabel!
     
@@ -110,9 +114,24 @@ class ViewController: UIViewController, SKSceneDelegate {
                 playergpoutlet.text = scoreInfo[0]
                 computergpoutlet.text = scoreInfo[0]
                 
-                // update player games text view
+                // update player and computer games text view
                 Pgames.text = String(statsManager.playerScore[1])
                 
+                Cgames.text = String(statsManager.computerScore[1])
+                
+                //if player wins a set
+                if (statsManager.playerScore[1] >= 6 && statsManager.playerScore[1] - statsManager.computerScore[1] >= 2) {
+                    //player won the set
+                    statsManager.computerScore[1] = 0
+                    statsManager.playerScore[1] = 0
+                    
+                    statsManager.playerScore[0] += 1
+                    
+                    Psets.text = String(statsManager.playerScore[0])
+                    
+                    Cgames.text = "0"
+                    Pgames.text = "0"
+                }
             }
             
             else if( diff == 1) {
@@ -137,22 +156,55 @@ class ViewController: UIViewController, SKSceneDelegate {
             }
             
             else {
-                //computer won
+                
+                
+                
+                
+                //Player------------------------------------------->
+                
+                
+                
+                // reset score text views
+                playergpoutlet.text = scoreInfo[0]
+                
+                
+                
+                
+                
+                
+                //Computer----------------------------------------->
+                
+                // add 1 to computer games
+                statsManager.computerScore[1] += 1
+                
+                Cgames.text = String(statsManager.computerScore[1])
                 
                 // reset points
                 statsManager.computerScore[2] = 0
                 statsManager.playerScore[2] = 0
                 
-                // add 1 to computer games
-                statsManager.computerScore[1] += 1
+                // if computer wins a set
+                if (statsManager.computerScore[1] >= 6 && statsManager.computerScore[1] - statsManager.playerScore[1] >= 2) {
+                    //computer won the set
+                    statsManager.computerScore[1] = 0
+                    statsManager.playerScore[1] = 0
+                    
+                    statsManager.computerScore[0] += 1
+                    
+                    Csets.text = String(statsManager.computerScore[0])
+                    
+                    Cgames.text = "0"
+                    Pgames.text = "0"
+                  
+                }
                 
-                // reset score text views
-                playergpoutlet.text = scoreInfo[0]
-                computergpoutlet.text = scoreInfo[0]
                 
-                // update computer games text view
-                Cgames.text = String(statsManager.computerScore[1])
+               
+              
             }
+            
+         
+            
         } else {
             // normal score update
             
@@ -160,9 +212,14 @@ class ViewController: UIViewController, SKSceneDelegate {
             computergpoutlet.text = scoreInfo[aiPoints]
             
         }
+        
+      
+        
+       
     }
     
 
 }
+
 
 

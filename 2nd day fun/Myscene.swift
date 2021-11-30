@@ -71,6 +71,7 @@ class Myscene: SKScene {
         // the value of temp :D smile
         BVX = temp
         // end of teh randomize Ball Velocity X method
+        
     }
     
     
